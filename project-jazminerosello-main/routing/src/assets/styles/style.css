@@ -1,0 +1,903 @@
+
+body{
+    /* font-family: montserrat; */
+    /* background-color: linear-gradient(120deg, #2980b9, #8e44ad); */
+    background: url(backgoround.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+    /* overflow: auto; */
+   
+    
+
+    /* display:flex;  */
+    /* flex-wrap: wrap; */
+    /* flex-direction:column;  */
+    /* justify-content:center; */
+    /* align-items: center; */
+    /* min-height:100vh; */
+    
+}
+
+@media screen and (max-width: 600px){
+    body{
+        background-size: cover;
+        
+    }
+}
+
+.home-page{
+
+    
+    display: flex;
+    
+    border-radius: 44px;
+    
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 20px;
+    overflow: auto;
+}
+
+
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: center;
+    
+    /* overflow: scroll; */
+}
+
+.logo {
+    width: 110px;
+    
+}
+
+@media screen and (max-width: 600px){
+    .logo{
+        width: 100px;
+    }
+
+    .home-page {
+        margin: 1px;
+    }
+}
+
+.page-header {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: fixed;
+    display: flex;
+    background: none;
+    flex-direction: row;
+    
+    
+    /* justify-content: end; */
+
+}
+
+.page-header h1 {
+    color: #FFFFFF;
+}
+
+li{
+    list-style-type: none;
+}
+
+
+.center, .center-wait{
+    /* position: relative;
+   background-color: #FFFFFF;
+   border-radius: 44px;
+   margin: 20%;
+   width: 400px; */
+   background-color: white;
+   border-radius: 40px;
+   width: 400px;
+   padding: 20px 0 20px 0;
+   
+
+}
+
+@media screen and (max-width: 600px){
+    .content{
+        flex-shrink: 1;
+        /* overflow: scroll; */
+        padding-top: 20px;
+        
+    }
+
+    .center {
+        margin: 130px 0 0 0;
+        max-height: 65vh;
+        overflow: auto;
+        
+    }
+}
+
+.center h1, .center-wait h2, .center h2{
+    text-align: center;
+    padding: 20px 20px 20px 20px;
+    border-bottom: 1px solid silver;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+
+
+.center h3, .center #option, .center-wait a, .center-wait h3, .student-details h4{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.student-details .student-sidebar{
+    margin-top: -20px;
+}
+
+.center-wait h3{
+    margin-top: 40px;
+}
+
+.center #openapp-button{
+    margin-top: 5%;
+    background: #012900;
+}
+
+.center h3{
+    margin-top: 5%;
+    margin-bottom: -10px;
+    padding-top: 20px;
+}
+
+.center-wait h2{
+    padding: 0 40px;
+    margin: 30px 0;
+    height: 100px;
+}
+
+.center-wait button{
+    background: #012900;
+    width: 50%;;
+}
+
+.center form {
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+form .txt_field, form .txt_field-center {
+    position: relative;
+    margin: 30px 0;
+}
+
+
+form .txt_field {
+    border-bottom: 2px solid #adadad;
+}
+
+.txt_field input, .txt_field-center input {
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.txt_field-center label{
+    margin-top: -30px;
+}
+
+.txt_field label{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: absolute;
+    top: 50%;
+    color: #adadad;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.txt_field span::before {
+    content: '';
+    position: absolute;
+    top: 40%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+}
+
+.txt_field input:focus ~ label,
+.txt_field input:valid ~ label {
+    top: -5px;
+    color: rgb(0, 97, 6);
+}
+
+.txt_field input:focus ~ span::before,
+.txt_field input:valid ~ span::before {
+    width: 100%;
+}
+
+.pass {
+    margin: -5xpx 0 2-px 5px;
+    color: a6a6a6;
+    cursor: pointer;
+}
+
+.pass:hover {
+    text-decoration: underline;
+}
+
+.signup_button {
+    width: 70%;
+    height: 50px;
+    border: 1px solid;
+    background: #012900;
+    border-radius: 25px;
+    font-size: 18px;
+    color: #e9f4fb;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    
+}
+
+.login_link {
+    border-color: #2691d9;
+    transition: .5s;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 20px 0 20px 0;
+
+}
+
+.tabs { 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding: 0 0 0 0;
+    padding: 0 0 20px 0;
+    font-size: larger;
+}
+
+
+
+.tab-box {
+    background: bisque;
+   
+}
+
+/*------------------------------------------------
+admin view
+*/
+
+.main {
+    background: #FFFFFF;
+    height:82vh;
+    display: flex;
+    justify-content: center;
+    border-radius: 44px;
+    align-items: stretch;
+    flex-direction: row;
+    
+    margin: 120px 20px 20px 20px;
+    /* overflow: scroll; */
+    
+
+}
+
+
+
+.side-bar {
+    display: flex;
+    max-height: 82vh;
+    flex-direction: column;
+    width: 300px;
+    background-color: bisque;
+    border-radius: 44px;
+    text-align: center;
+    align-items: stretch;
+    flex-shrink: 1;
+    flex-grow: 0;
+    
+}
+
+@media screen and (max-width: 600px){
+    .side-bar{
+        width: auto;
+        flex-grow: 1;
+    }
+    .main {
+        margin: 150px 10px 10px 10px;
+        overflow: auto;
+        flex-direction: column;
+    }
+}
+
+
+
+.side-bar h3, .side-bar h1, .side-bar h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.side-bar h3{
+    margin-top: 50px;
+}
+
+.side-bar h1{
+    margin-top: -20px;
+}
+
+@media screen and (max-width: 600px){
+    .side-bar{
+        flex-grow: 1;
+    
+    }
+}
+
+.pending_acc_sec {
+    /* background-color: #bee5ff; */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    flex-grow: 1;
+    border-radius: 44px;
+    text-align: center;
+    /* overflow: scroll;*/
+    margin:  0 40px 0 40px;
+
+    
+}
+
+.pending_acc_sec h1{
+    border-bottom: 2px solid #adadad;
+    
+    
+}
+
+
+
+.search_approver, .approved-pending, .create-approver label{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-bottom: 5px;
+    color: #adadad;
+    padding-top: 20px;
+    align-items: stretch;
+    flex: 1;
+   
+    
+}
+
+.create-approver h3{
+    margin-top: -10px;
+}
+
+.create-approver h4{
+    color: #adadad;
+}
+
+
+.text_field{
+    margin-top: 7%;
+    margin-bottom: auto;
+}
+
+.create-approver label{
+    align-items: center;
+}
+.search_approver label, .approved-pending label{
+    font-size: 14px;
+    text-align: left;
+}
+
+.search_approver input, .approved-pending input, .create-approver input {
+    width: 100%;
+    height: 20px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+    border-bottom: 2px solid #adadad;
+    padding: 0;
+
+}
+
+.create-approver input{
+    width: 70%;
+    margin-bottom: 20px;
+}
+
+.search_approver button, .approved-pending button, .create-approver button, .create_approver button{
+    margin-top: 5px;
+    /* margin-left: 10px; */
+    height: 30px;
+    border: 1px solid;
+    background: #6a0000;
+    border-radius: 25px;
+    font-size: 16px;
+    color: #FFFFFF;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+    padding:0 30px;
+    
+}
+
+#search-adviser{
+    font-size: 75%;
+}
+
+
+.search_approver #search, .approved-pending #search {
+    width: 100px;
+    text-align: center;
+    padding: 0;
+}
+
+.logout_button {
+    margin-bottom: 20px;
+    margin-top: auto;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.manage_approver {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    flex: 1
+    
+}
+
+.create-approver button{
+    width: auto;
+}
+
+/* -----------------------------------------------------------------
+create approver */
+
+.create_approver{
+    display: flex;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    flex-grow: 1;
+    border-radius: 44px;
+    text-align: center;
+    /* overflow: scroll;*/
+    margin:  0 40px 0 40px;
+    flex-direction: column;
+    
+}
+.create_approver form{
+    padding-top: 0px;
+    margin: 0 10% 0 10%;
+}
+
+.create_approver button, .home-btn{
+    height: 30px;
+    border: 1px solid;
+    background: #6a0000;
+    border-radius: 25px;
+    font-size: 16px;
+    color: #FFFFFF;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+    padding:0 30px;
+}
+
+.home-buttons .home-btn{
+    background-color: #012900;
+    margin: 5px;
+    height: 30px;
+    width: 70%;
+}
+@media screen and (max-width: 600px){
+    .home-buttons .home-btn{
+        height: 50px;
+    }
+}
+
+.home-btn {
+    transition-duration: 0.4s;
+}
+
+.signup_button{
+    transition-duration: 0.4s;
+}
+
+.signup_button:hover{
+    background-color: #3b9c39; /* Green */
+    color: #fffdfd;
+}
+  
+.home-btn:hover {
+    background-color: white; /* Green */
+    color: #012900;
+}
+
+.create_approver_button{
+    flex-grow: 1;
+}
+
+/* ----------------------------------------------------------------------
+edit/delete approvers */
+.approvers {
+    display: flex;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    flex-grow: 1;
+    border-radius: 44px;
+    text-align: center;
+    overflow: scroll;
+    margin:  0 40px 0 40px;
+    flex-direction: column;
+    height: 82vh;
+}
+
+.sort {
+    display: flex;
+    justify-content: center;
+}
+
+.sort-pending{
+    display: block;
+}
+
+.sort button{
+    margin: 0 5px 0 5px;
+    width: 300px;
+    height: 30px;
+    border: 1px solid;
+    background: #6a0000;
+    border-radius: 25px;
+    font-size: 16px;
+    color: #FFFFFF;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+    padding:0 30px;
+
+}
+
+@media screen and (max-width: 600px) {
+    .sort button {
+        height: 70px;
+    }
+
+    
+}
+
+.sort .approver-btn{
+    width: auto;
+    margin-bottom: 10px;
+}
+
+
+
+ #adviser-options{
+    background-color: #ffffff;
+    padding: 5px;
+    margin-bottom: 10px;
+    margin-top: -20px;
+ }
+
+.filter-btns{   
+    justify-content: center;
+}
+
+.filter-btns button{
+    margin: 10px 5px 0 5px;
+    width: auto;
+    height: 30px;
+    border: 1px solid;
+    background: #012900;
+    border-radius: 25px;
+    font-size: 13px;
+    color: #FFFFFF;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+    padding:0 30px;
+}
+
+.filter-btns #step{
+    width: 200px;
+}
+
+.sort #red{
+    width: auto;
+}
+
+@media (max-width: 300px) {
+    .sort button {
+      height: 50px; /* Adjusted height for smaller screens */
+    };
+}
+
+/*------------------------------------------------
+search approver
+*/
+
+.search {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    
+}
+
+/*------------------------------------------------
+Adviser Page - Main
+*/
+#approvers-main{
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* .approver #view-clearance {
+    display: flex;
+    flex-direction: column;
+} */
+
+#approvers-main h1, #clearance-box h1, #view-clearance h1{
+    border-bottom: 2px solid #adadad;
+    line-height:2em;
+}
+
+.edit-approver, .create-approver p{
+    margin-top: -10px;
+}
+
+.approved-pending #green, .search_approver #green ,.create-approver #green, .manage_approver #green, .create-approver #approve-btn, .sort #green, .create-approver #close-app, .sort #green-btn{
+    background: #012900;
+}
+
+.create-approver #close-app{
+    margin-bottom: 10px;
+}
+
+.create-approver{
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    
+    
+}
+
+#student-clearance{
+    display: flex;
+    align-items: center;
+    
+}
+
+
+
+.approved-pending #red{
+    margin-top: 20px;
+}
+
+.name, .githublink{
+    text-align: center;
+}
+
+#clearance-box{
+    align-items: center;
+     border: 2px solid #adadad; 
+    margin: auto;
+    padding: 20px;
+    
+    border-radius: 50px;
+    /* overflow: scroll; */
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    width: 75%;
+    /* overflow: scroll; */
+}
+
+@media screen and (max-width: 600px) {
+    .box button {
+      height: 50px; /* Adjusted height for smaller screens */
+    };
+}
+
+
+/* .box-results{
+    padding: 50px 0;
+    text-align: center;
+} */
+
+
+.sort #green{
+    margin-bottom: 20px;
+}
+
+.list, .list-clearance{
+    /* display: flex;
+    justify-content: center; */
+    /* margin: 20px; */
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.list li, .list-clearance li {
+    text-align: center;
+    background-color: #d1d1d1;
+    border-radius: 20px;
+    margin: 0 0 20px 0 ;
+}
+
+.list-clearance li{
+    margin-bottom: 10px;
+}
+
+.details{
+    padding-top: 20px;
+}
+.details ul{
+    padding: 0;
+}
+
+.signup-req{
+    margin-bottom: -10px;
+    margin-top: -3px;
+}
+
+#result-name{
+    margin-top: -15px;
+    margin-bottom: 50px;
+}
+
+#result-h3{
+    color: #666a6d;
+}
+
+.sort #green{
+    width: auto;
+}
+
+.filter-text:focus {
+    border: 3px solid #aaa8a8;
+}
+
+.filter-text{
+    margin: 5px;
+}
+
+.filter-all {
+    padding: 20px 0 0 0;
+}
+
+.filter-all .filter-text{
+    width: 20%;
+}
+
+.sort .adviser-btn{
+    margin-top: 10px;
+}
+
+.download-btn {
+    margin: 0 5px 0 5px;
+    width: 300px;
+    height: 30px;
+    border: 1px solid;
+    background:#012900;
+    border-radius: 25px;
+    font-size: 16px;
+    color: #FFFFFF;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+    padding:0 30px  0;
+}
+
+.clearance-filter {
+    /* display: flex; */
+    flex-direction: row;
+    /* column-count: 3; */
+    /* width: 100%; */
+    margin: 10px;
+}
+
+/* @media screen and (max-width: 600px){
+    .clearance-filter{
+        flex-direction: column;
+    }
+} */
+
+/* PDF FORMAT */
+/* body {
+    background-color: brown;
+    display: flex;
+    justify-content: center;
+    
+} */
+.pdf {
+    display: none;
+}
+
+.page {
+    background-color: white;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    
+}
+
+.header {
+    border-bottom: 1px solid;
+    margin: 1in 1in 0 1in;
+}
+
+.header #uni{
+    font-size: 16pt;
+    padding-top: 10px;
+}
+.header #dept, #college{
+    font-size: 14pt;
+}
+
+.content-pdf {
+    text-align: start;
+    margin: 0 1in 0 1in;
+}
+.home{
+    display: flex;
+    align-items: center;
+   
+}
+
+.home2{
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 600px){
+    .page-header {
+        flex-direction: column;
+    }
+}
+
+.home button{
+    border-radius: 5px;
+    background: none;
+    color: white;
+    border-color: white;
+    width: 70px;
+    height: 40px;
+    
+}
+
+
+
+@media screen and (max-width: 600px){
+    .home button{
+        height: 30px;
+        width: 60px;
+    }
+
+    .home2 {
+        padding-left: 19.5px;
+    }
+}
+
+.pdf-btn {
+    display: flex;
+    padding-bottom: 10px;
+
+
+}
